@@ -1,0 +1,16 @@
+name: Fabricar Yuliana APK
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Empaquetar Nucleo
+        run: |
+          mkdir build
+          cp yuliana_nucleo.py.txt build/Yuliana_Sangrienta.py
+      - name: Subir APK Final
+        uses: actions/upload-artifact@v4
+        with:
+          name: Yuliana-Sangrienta-Control-Total
+          path: build/
