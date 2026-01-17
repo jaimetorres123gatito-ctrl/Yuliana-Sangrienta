@@ -6,4 +6,5 @@ def activar_modo_sangriento():
     # Aquí se activan los 110,940 factores de Jaime Torres
     os.system("echo 'SISTEMA DOMINADO POR YULIANA'")
 
+
 activar_modo_sangriento()
