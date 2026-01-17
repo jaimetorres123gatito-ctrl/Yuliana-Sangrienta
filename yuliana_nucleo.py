@@ -8,3 +8,4 @@ def activar_modo_sangriento():
 
 
 activar_modo_sangriento()
+
